@@ -4,6 +4,10 @@ WORKDIR "~"
 
 ENV CONDA_ALWAYS_YES="true"
 
+RUN ["apt-get", "update"]
+
+RUN ["apt-get", "install", "vim", "-y"]
+
 RUN ["conda", "update", "conda"]
 
 RUN ["conda", "update", "--all"]

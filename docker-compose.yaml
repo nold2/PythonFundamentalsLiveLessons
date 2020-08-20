@@ -3,8 +3,15 @@ services:
   anaconda:
     image: anaconda:latest
     container_name: anaconda
+    environment:
+      - JUPYTER_LAB=jupyter lab --no-browser --ip 0.0.0.0 --allow-root
     tty: true
     volumes:
       - ./examples:/~
+    networks:
+      - overlay
     ports:
-      - "8888:888"
+      - "8888:8888"
+
+networks:
+  overlay:
