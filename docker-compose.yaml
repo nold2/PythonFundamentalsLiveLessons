@@ -1,0 +1,10 @@
+version: "3.8"
+services: 
+  anaconda:
+    image: anaconda:latest
+    container_name: anaconda
+    tty: true
+    volumes:
+      - ./examples:/~
+    ports:
+      - "8888:888"

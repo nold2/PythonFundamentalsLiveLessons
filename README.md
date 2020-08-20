@@ -10,16 +10,5 @@ These files are Copyright 2019 by Pearson Education, Inc. All Rights Reserved.
 ## How to use:
 1. docker-compose up -d 
 
-2. docker exec -it anacondafull bash
+2. docker exec -it anaconda bash
 
-3. conda update conda
-
-4. conda update --all
-
-5. conda install -c conda-forge ipyml
-
-6. conda install nodejs
-
-7. jupyter labextension install @jupyter-widgets/jupyterlab-manager
-
-8. jupyter labextension install jupyter-matplotlib
